@@ -18,6 +18,7 @@ export async function status(ctx: Context, next: () => Promise<any>) {
 
   console.info('Status headers', headers)
   console.info('Status data:', data)
+  console.info('Settings: ', ctx.vtex.settings)
 
   ctx.status = responseStatus
   ctx.body = data
