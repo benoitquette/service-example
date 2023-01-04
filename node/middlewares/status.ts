@@ -21,7 +21,7 @@ export async function status(ctx: Context, next: () => Promise<any>) {
   console.info('Settings: ', ctx.vtex.settings)
 
   ctx.status = responseStatus
-  ctx.body = data
+  ctx.body = ctx.vtex.settings
   ctx.set('Cache-Control', headers['cache-control'])
 
   await next()

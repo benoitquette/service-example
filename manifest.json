@@ -1,7 +1,7 @@
 {
   "name": "service-example",
   "vendor": "t24",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "title": "Service App Example",
   "description": "Example of a service app for VTEX IO Services",
   "mustUpdateAt": "2018-01-04",
@@ -29,6 +29,9 @@
     },
     {
       "name": "colossus-write-logs"
+    },
+    {
+      "name": "read-workspace-apps"
     }
   ],
   "$schema": "https://raw.githubusercontent.com/vtex/node-vtex-api/master/gen/manifest.schema"
